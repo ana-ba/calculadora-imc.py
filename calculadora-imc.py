@@ -33,9 +33,11 @@ def calcular_imc():
 
     else:
         print("Sexo inválido. Por favor, digite M para masculino ou F para feminino.")
+        
+calcular_imc()
 
+resposta = input("Deseja calcular novamente? (S/N): ").upper()
 
-resposta = input("Deseja calcular Novamente? (S/N): ") .upper()
 while resposta == "S":
     calcular_imc()
     resposta = input("Deseja calcular novamente? (S/N): ").upper()
